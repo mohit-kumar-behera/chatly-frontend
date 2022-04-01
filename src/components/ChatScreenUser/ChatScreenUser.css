@@ -1,0 +1,9 @@
+.chat-screen__user {
+  background-color: var(--color-light);
+  border-left: 0.04px solid var(--color-grey);
+  padding: 0 3rem;
+  pointer-events: none;
+}
+.chat-screen__user > div {
+  width: 270px;
+}

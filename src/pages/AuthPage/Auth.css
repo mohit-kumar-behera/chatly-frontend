@@ -1,0 +1,71 @@
+.token-container {
+  word-break: break-all;
+}
+.auth-form > *:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+.user-input {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 0.4rem;
+  color: var(--color-grey-dark);
+  border: 1.5px solid var(--color-primary);
+  border-radius: 4px;
+  font-size: 1.05rem;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.user-input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+.form-btn {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: 0.7rem 3rem;
+  font-size: 1.02rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  transition: 0.3s ease;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+.form-btn:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+.form-btn:active {
+  transform: scale(0.92);
+  -webkit-transform: scale(0.92);
+  -moz-transform: scale(0.92);
+  -ms-transform: scale(0.92);
+  -o-transform: scale(0.92);
+}
+.page-action-btn-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.page-action-btn {
+  border: none;
+  cursor: pointer;
+}
+.page-action-btn.cancel {
+  background-color: var(--color-light);
+  color: var(--color-grey-dark);
+}
+.page-action-btn:active {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+}

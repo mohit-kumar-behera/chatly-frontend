@@ -1,0 +1,19 @@
+.center-box {
+  width: 50%;
+  position: relative;
+  top: 40%;
+  left: 40%;
+  border: 0.4px solid var(--color-grey-dark);
+  border-radius: 3px;
+  padding: 0.7rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}

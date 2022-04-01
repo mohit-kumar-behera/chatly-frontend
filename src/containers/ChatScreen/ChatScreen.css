@@ -1,0 +1,5 @@
+.chat-screen-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 91.5vh;
+}

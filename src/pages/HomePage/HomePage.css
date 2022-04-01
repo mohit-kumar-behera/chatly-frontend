@@ -1,0 +1,32 @@
+.page-div > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.page-head {
+  color: var(--color-primary);
+}
+.page-text {
+  color: var(--color-grey-dark);
+  line-height: 24px;
+  word-spacing: 7px;
+}
+.page-action-btn {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  font-weight: 600;
+  padding: 0.7rem 3rem;
+  border-radius: 100px;
+  transition: 0.3s ease;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+.page-action-btn:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}

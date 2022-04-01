@@ -1,0 +1,48 @@
+.chat-screen__message-create {
+  background-color: var(--color-light);
+  border-left: 0.04px solid var(--color-grey);
+  padding: 1rem 3rem;
+}
+.message-form {
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+  grid-gap: 1.5rem;
+}
+.input-message {
+  padding: 0.7rem 2rem;
+  color: var(--color-grey-dark);
+  border: 1.5px solid var(--color-primary);
+  border-radius: 100px;
+  font-size: 1.05rem;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+.input-message:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+.message-send-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.message-send-btn > svg {
+  transform: scale(1.8);
+  color: var(--color-primary);
+  -webkit-transform: scale(1.8);
+  -moz-transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  -o-transform: scale(1.8);
+}
