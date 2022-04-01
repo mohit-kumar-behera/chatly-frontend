@@ -1,4 +1,4 @@
-export const ENDPOINT_URL = 'http://localhost:8000';
+export const ENDPOINT_URL = 'https://chatly-server.herokuapp.com/'; // 'http://localhost:8000';
 
 const LOCAL_STORAGE_KEY_NAME = 'chatlyState';
 
