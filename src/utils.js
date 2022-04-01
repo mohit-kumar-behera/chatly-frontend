@@ -1,4 +1,5 @@
-export const ENDPOINT_URL = 'https://chatly-server.herokuapp.com/'; // 'http://localhost:8000';
+export const ENDPOINT_URL = 'https://chatly-server.herokuapp.com/'; // When in Production
+// export const ENDPOINT_URL = 'http://localhost:8000'; // When running the APP locally (Node.js running on port 8000)
 
 const LOCAL_STORAGE_KEY_NAME = 'chatlyState';
 

@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import io from 'socket.io-client';
+import { FiClipboard } from 'react-icons/fi';
+import { FaClipboardCheck } from 'react-icons/fa';
 
 import { ENDPOINT_URL } from '../utils';
 
@@ -11,6 +13,7 @@ const initialStateToken = { user: null, registerToken: null };
 const Register = function ({ isAuthenticated }) {
   const [registerForm, setRegisterForm] = useState(initialStateRegisterForm);
   const [token, setToken] = useState(initialStateToken);
+  const [tokenCopied, setTokenCopied] = useState(false);
   const socketRef = useRef();
 
   useEffect(() => {
@@ -46,6 +49,17 @@ const Register = function ({ isAuthenticated }) {
     setRegisterForm(initialStateRegisterForm);
   };
 
+  const copyToClipboard = function () {
+    let flag = false;
+
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(token.registerToken);
+      flag = true;
+    }
+
+    setTokenCopied(flag);
+  };
+
   const renderOrRedirect = function () {
     if (isAuthenticated) return <Navigate to="/chat" />;
 
@@ -56,6 +70,23 @@ const Register = function ({ isAuthenticated }) {
             <h4 style={{ color: '#21978b' }}>Your token for Login is -</h4>
             <br />
             <h4>{token.registerToken}</h4>
+            <br />
+            <button
+              onClick={copyToClipboard}
+              className="page-action-btn"
+              style={{ fontSize: '1.2rem', display: 'block' }}
+            >
+              {tokenCopied ? <FaClipboardCheck /> : <FiClipboard />}
+            </button>
+            {tokenCopied && (
+              <Link
+                to="/login"
+                className="page-action-btn"
+                style={{ marginTop: '1.5rem', display: 'inline-block' }}
+              >
+                Go to Login Page
+              </Link>
+            )}
           </div>
         ) : (
           <>
